@@ -76,7 +76,7 @@
 
                 function getMatchStates(input) {
                     return  !input ? states : states.filter(function(state) {
-                            return state.toLowerCase().startsWith(input);
+                            return state.toLowerCase().includes(input);
                         });
                 }
 
