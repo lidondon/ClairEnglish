@@ -1,6 +1,4 @@
 import httpStatus from "http-status";
-import config from "../config/config";
-import stringZh from "../config/string_en";
 
 const successResponse = (data) => {
     return {
@@ -24,15 +22,6 @@ const http = {
     getValidationMiddleware
 };
 
-const isEmailFormat = s => {
-    return /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z]+$/.test(s);
-}
-
-const common = {
-    isEmailFormat
-};
-
 export default {
-    http,
-    common
+    http
 };
